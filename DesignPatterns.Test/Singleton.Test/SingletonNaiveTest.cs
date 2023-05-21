@@ -31,7 +31,7 @@ namespace DesignPatterns.Test.Singleton.Test
 		}
 
 		[TestMethod]
-		public void CallingOnDifferentParallelThreads_ShouldFail()
+		public void CallingOnDifferentParallelThreads_NotEqualInstance()
 		{
 			var strings = new List<string>() { "one", "two", "three" };
 			var instances = new List<SingletonNaive>();
